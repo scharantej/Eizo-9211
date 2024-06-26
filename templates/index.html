@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Learn Japanese with Images</title>
+</head>
+<body>
+<h1>Learn Japanese with Images</h1>
+<ul>
+{% for category in categories %}
+<li><a href="/category/{{ category }}">{{ category }}</a></li>
+{% endfor %}
+</ul>
+</body>
+</html>
+
+
