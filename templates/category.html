@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{ category_name }} - Learn Japanese with Images</title>
+</head>
+<body>
+<h1>{{ category_name }}</h1>
+<ul>
+{% for word in words %}
+<li>
+<div>
+<h2>{{ word.japanese }}</h2>
+<p>{{ word.pronunciation }}</p>
+<p>{{ word.english }}</p>
+<img src="{{ word.image }}" alt="{{ word.japanese }}">
+</div>
+</li>
+{% endfor %}
+</ul>
+</body>
+</html>
+
